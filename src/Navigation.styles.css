@@ -1,0 +1,67 @@
+.navigation{
+    margin-top: 4vw;
+}
+.heading-dark{
+    font-weight: 600;
+    font-size: calc((1.8) * calc(.012 * min(100vh, 900px)) + .5rem)
+}
+.navbar-toggler{
+    width: 25px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #666;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+.navbar-toggler .bottom-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -5px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0deg);
+    margin-top: 5px;
+}
+
+@media screen and (max-width:768px){
+    .mjt-nav-wrapper{
+        margin-top: 50%;
+    }
+    .mjt-nav-wrapper a{
+        font-size: 8vmin;
+        padding: .5rem 1.5rem;
+    }
+}
+
